@@ -1,0 +1,20 @@
+{
+  "files": {
+    "main.css": "/contact-book-app/static/css/main.e2bfea62.chunk.css",
+    "main.js": "/contact-book-app/static/js/main.adc8e86a.chunk.js",
+    "main.js.map": "/contact-book-app/static/js/main.adc8e86a.chunk.js.map",
+    "runtime-main.js": "/contact-book-app/static/js/runtime-main.d909db37.js",
+    "runtime-main.js.map": "/contact-book-app/static/js/runtime-main.d909db37.js.map",
+    "static/js/2.2ed22bac.chunk.js": "/contact-book-app/static/js/2.2ed22bac.chunk.js",
+    "static/js/2.2ed22bac.chunk.js.map": "/contact-book-app/static/js/2.2ed22bac.chunk.js.map",
+    "index.html": "/contact-book-app/index.html",
+    "static/css/main.e2bfea62.chunk.css.map": "/contact-book-app/static/css/main.e2bfea62.chunk.css.map",
+    "static/js/2.2ed22bac.chunk.js.LICENSE.txt": "/contact-book-app/static/js/2.2ed22bac.chunk.js.LICENSE.txt"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.d909db37.js",
+    "static/js/2.2ed22bac.chunk.js",
+    "static/css/main.e2bfea62.chunk.css",
+    "static/js/main.adc8e86a.chunk.js"
+  ]
+}
