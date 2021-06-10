@@ -1,25 +1,48 @@
-import logo from './logo.svg';
-import './App.css';
+import React from "react";
+import { BrowserRouter as Router, Switch, Route} from "react-router-dom";
+import Navbar from "./Navbar";
+import Contacts from "./components/Contacts";
+import AddNewContact from "./components/AddNewContact";
+import EditContact from "./components/EditContact";
+import Pagenotfound from "./Pagenotfound";
 
-function App() {
+const App =()=> {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <Router>
+      <div>
+        <Navbar />
+        <Switch>
+          <Route exact path="/">
+            <Contacts />
+          </Route>
+         <Route path="/add">
+            <AddNewContact />
+          </Route>
+          <Route path="/contacts/edit/:id">
+            <EditContact />
+          </Route>
+          <Route path="*">
+            <Pagenotfound />
+          </Route>
+        </Switch>
+      </div>
+    </Router>
   );
 }
-
 export default App;
+
+//clone from gitHub
+//npm install
+//npm start:dev 
+
+// External packages used
+//react-router-dom : routing 
+//axios : fetch the data ...create,delete,and update 
+//json-server : storing data as json file
+//concurrently : to run two terminal i.e npm start and --watch json file
+
+//React Hooks used
+// useState 
+// useEffect 
+// useParam 
+// useHistory
